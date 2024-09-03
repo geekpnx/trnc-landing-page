@@ -1,0 +1,238 @@
+
+.oswald-regular {
+  font-family: "Oswald";
+  font-optical-sizing: auto;
+  font-weight: 12;
+  font-style: normal;
+}
+
+
+
+body {
+   font-family: "Oswald";
+   margin: 0;
+   padding: 0;
+   background-color: #94e0f7;
+   color: #333;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+   max-width: 800px;
+   margin: 50px auto;
+   padding: 50px;
+   text-align: center;
+   background-size: cover;
+   background-position: center; /* Center the background image */
+   background-repeat: no-repeat;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   position: relative; 
+}
+
+
+body .container-error {
+   background-position: 530px 320px;
+   background-size:40%;
+   background-repeat: no-repeat;
+   background-image: url('/static/img/trnc-hmm.gif');
+   color: #2c3e50;
+}
+
+.container-error{
+   max-width: 800px;
+   margin: 50px auto;
+   padding: 50px;
+   text-align: center;
+   background-color: #f11657;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+}
+
+h2 {
+   font-size: 40px;
+   margin-bottom: 20px;
+   color: #454545;
+}
+
+.container span {
+   font-weight:500;
+   font-size:larger;
+}
+
+.err-img img {
+   width: 500px;
+   height: 300px;
+}
+
+.err-code {
+   font-size: 100px;
+   color: #ffffff;
+   margin-top: 60px;
+}
+
+.forbidden {
+   font-size: 50px;
+   color: #ffffff;
+   margin-top: 0;
+}
+
+.err-code h1,
+.forbidden h1 {
+   line-height: 1; /* Adjust this value to control spacing between the lines */
+   margin: 0; /* Ensure there's no margin adding extra space */
+}
+
+.click-me {
+    line-height: 1; /* Adjust this value to control spacing between the lines */
+    margin-top: 130px;
+
+}
+
+.click-me button {
+   background-color: yellow; /* Set the button's background color to yellow */
+   color: black; /* Set the button's text color to black */
+   font-size: 18px;
+   padding: 10px 20px;
+   margin: 10px;
+   border: none;
+   border-radius: 50%; /* Make the button round */
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+   width: 100px; /* Set a width to make the button perfectly round */
+   height: 100px; /* Set a height to make the button perfectly round */
+   display: inline-flex; /* Center text inside the button */
+   align-items: center; /* Center text vertically */
+   justify-content: center; /* Center text horizontally */
+}
+
+.click-me button:hover {
+   background-color: black; /* Change background color to black on hover */
+   color: white; /* Change text color to white on hover */
+}
+
+button {
+   font-family: "Oswald";
+   font-size: 18px;
+   padding: 10px 20px;
+   margin: 10px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+button:hover {
+   background-color: #ddd;
+}
+
+img {
+   margin-top: 20px;
+   max-width: 100%;
+   height: auto;
+   border-radius: 10px;
+   width: 600px;
+   height: 600px;
+}
+
+
+/* Dark Theme */
+body.dark {
+   background-color: #000000;
+   color: #5a5656;
+}
+
+
+body.dark .container {
+   background-image: url('/static/img/anim-road-bw.gif');
+   color: #2c3e50;
+}
+
+body.dark button {
+   background-color: #16a085;
+   color: #ecf0f1;
+}
+
+body.dark button:hover {
+   background-color: #1abc9c;
+}
+
+/* Light Theme */
+body.light {
+   background-color: #57d7f8;
+   color: #2c3e50;
+}
+
+body.light .container {
+   background-image: url('/static/img/anim-road.gif');
+}
+
+body.light button {
+   background-color: #3498db;
+   color: #ffffff;
+}
+
+body.light button:hover {
+   background-color: #686868;
+}
+
+
+.switch {
+   position: absolute; /* Position the switch absolutely within the container */
+   top: 20px; /* Adjust this value to move the switch down/up */
+   right: 20px; /* Adjust this value to move the switch left/right */
+   width: 60px;
+   height: 34px;
+   z-index: 1; /* Ensure the switch stays on top of other elements */
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+}
+
+/* The slider */
+.slider {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #ccc;
+   transition: 0.4s;
+   border-radius: 34px;
+}
+
+.slider:before {
+   position: absolute;
+   content: "";
+   height: 26px;
+   width: 26px;
+   left: 4px;
+   bottom: 4px;
+   background-color: white;
+   transition: 0.4s;
+   border-radius: 50%;
+}
+
+/* Change the background color of the slider when checked */
+input:checked + .slider {
+   background-color: #6f6f6f;
+}
+
+/* Move the slider when checked */
+input:checked + .slider:before {
+   transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+   border-radius: 34px;
+}
+
+.slider.round:before {
+   border-radius: 50%;
+}
