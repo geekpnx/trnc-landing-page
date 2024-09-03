@@ -91,7 +91,7 @@ body.dark {
 }
 
 body.dark .container {
-   background-image: url('../img/anim-road-bw.gif');
+   background-image: url('https://geekpnx.github.io/trnc-landing-page/static/img/anim-road-bw.gif');
    color: #2c3e50;
 }
 
@@ -102,5 +102,5 @@ body.light {
 }
 
 body.light .container {
-   background-image: url('../img/anim-road.gif');
+   background-image: url('https://geekpnx.github.io/trnc-landing-page/static/img/anim-road.gif');
 }
