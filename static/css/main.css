@@ -104,3 +104,34 @@ body.light {
 body.light .container {
    background-image: url('https://geekpnx.github.io/trnc-landing-page/static/img/anim-road.gif');
 }
+
+.check-me {
+   position: absolute; /* Position the button absolutely within the container */
+   bottom: 20px;       /* Position the button 20px from the bottom */
+   right: 20px;        /* Position the button 20px from the right */
+   line-height: 1;
+   margin-top: 0;      /* Remove the margin-top as it's no longer needed */
+}
+
+.check-me button {
+   font-family:  "Oswald";
+   background-color: #ef6133;
+   color: #224b66;
+   font-size: 18px;
+   padding: 10px 20px;
+   margin: 10px;
+   border: none;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;
+   width: 100px;
+   height: 100px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.check-me button:hover {
+   background-color: black;
+   color: white;
+}
