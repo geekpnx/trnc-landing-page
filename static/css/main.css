@@ -76,7 +76,7 @@ img {
 
 /* Change the background color of the slider when checked */
 input:checked + .slider {
-   background-color: #336485;
+   background-color: #4fbac0;
 }
 
 /* Move the slider when checked */
