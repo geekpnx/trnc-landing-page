@@ -57,7 +57,7 @@ img {
    left: 0;
    right: 0;
    bottom: 0;
-   background-color: #ccc;
+   background-color: #000000;
    transition: 0.4s;
    border-radius: 34px;
 }
@@ -76,7 +76,7 @@ img {
 
 /* Change the background color of the slider when checked */
 input:checked + .slider {
-   background-color: #6f6f6f;
+   background-color: #336485;
 }
 
 /* Move the slider when checked */
@@ -92,7 +92,6 @@ body.dark {
 
 body.dark .container {
    background-image: url('https://geekpnx.github.io/trnc-landing-page/static/img/anim-road-bw.gif');
-   color: #2c3e50;
 }
 
 /* Light Theme */
